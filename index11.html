@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="sty11.css">
+    </head>
+    <body>
+        <p>eneter your name</p>
+        <input type="text" name="" id="name"/>       
+        <p>enter your age</p>
+        <input type="number" name="" id="age"/> 
+        <p>enter your country name</p>
+        <input type="text" name="" id="country"/> 
+        <button onclick="validateAge" >result</button>
+        <script>
+            function validateAge(){
+                var resultElement=document.getElementById("result");
+                var name=document.getElementById("name");
+                var country=document.getElementById("country");
+                var age=document.getElementById("age");
+                if ((age>=18) &&(country=="INDIA" ||country=="india")){
+                   resultElement.innerText =name.value+"shabash beta you are eligible";
+                } else {
+                    resultElement.innerText=name.value+"innu 18 agilla";
+                    
+           
+                     }     }
+        </script>
+    </body>
+</html>
